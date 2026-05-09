@@ -138,6 +138,58 @@ a:hover { opacity: .75; }
 .btn--ghost:hover { background: var(--accent-soft); opacity: 1; }
 .btn svg { width: 16px; height: 16px; }
 
+/* === Featured Banner（朝活部募集） === */
+.featured-banner {
+  max-width: 1080px; margin: 24px auto -8px; padding: 0 24px;
+}
+.featured-banner__inner {
+  position: relative;
+  background: linear-gradient(135deg, #f7e9d3 0%, #f4d8b1 50%, #e9c89a 100%);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  display: grid; grid-template-columns: 1fr auto;
+  gap: 32px; align-items: center;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(176, 136, 102, 0.18);
+}
+.featured-banner__inner::before {
+  content: ""; position: absolute;
+  top: -60px; right: -40px;
+  width: 220px; height: 220px;
+  background: radial-gradient(circle, rgba(255, 230, 180, .8), transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.featured-banner__badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #fff; padding: 6px 14px; border-radius: 999px;
+  font-size: .75rem; letter-spacing: .15em;
+  color: var(--accent-dark); font-weight: 600;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(176, 136, 102, 0.12);
+}
+.featured-banner__title {
+  font-family: var(--serif); font-size: 1.55rem; font-weight: 500;
+  letter-spacing: .03em; line-height: 1.5; margin-bottom: 10px;
+  color: var(--text);
+}
+.featured-banner__desc {
+  color: var(--text-soft); font-size: .95rem; margin-bottom: 18px;
+  max-width: 540px;
+}
+.featured-banner__perks {
+  display: flex; gap: 22px; flex-wrap: wrap;
+  font-size: .85rem; color: var(--accent-dark); font-weight: 500;
+  margin-bottom: 4px;
+}
+.featured-banner__perks span { display: inline-flex; align-items: center; gap: 6px; }
+.featured-banner__cta { position: relative; z-index: 1; }
+@media (max-width: 820px) {
+  .featured-banner__inner { grid-template-columns: 1fr; padding: 28px; gap: 18px; text-align: center; }
+  .featured-banner__title { font-size: 1.3rem; }
+  .featured-banner__perks { justify-content: center; gap: 14px; }
+}
+
 /* === Sections === */
 .section { max-width: 1080px; margin: 0 auto; padding: 64px 24px; }
 .section--soft { background: var(--bg-soft); max-width: none; padding: 80px 24px; }
@@ -281,6 +333,31 @@ a:hover { opacity: .75; }
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
       <a href="#articles" class="btn btn--ghost">最新の記録を見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Featured Banner（朝活部 募集） ===== -->
+<section class="featured-banner" aria-label="朝活部メンバー募集">
+  <div class="featured-banner__inner">
+    <div>
+      <span class="featured-banner__badge">🌅 NOW RECRUITING</span>
+      <h2 class="featured-banner__title">ジブン株式会社朝活部、メンバー募集中。</h2>
+      <p class="featured-banner__desc">
+        朝の30分を、自分のために使ってみませんか。
+        ゆるく、でも続けられる。一人だと続かないことが、仲間がいると驚くほど続きます。
+      </p>
+      <div class="featured-banner__perks">
+        <span>☀️ 朝5:30〜6:00 オンライン集合</span>
+        <span>📖 学び・運動・書く時間</span>
+        <span>🤝 走る仲間・書く仲間と出会える</span>
+      </div>
+    </div>
+    <div class="featured-banner__cta">
+      <a href="https://note.com/todyboo/n/n9d628a0eb881" target="_blank" rel="noopener" class="btn btn--primary">
+        詳しく見る・参加する
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
     </div>
   </div>
 </section>

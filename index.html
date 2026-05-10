@@ -190,6 +190,25 @@ a:hover { opacity: .75; }
   .featured-banner__perks { justify-content: center; gap: 14px; }
 }
 
+/* === Featured Banner --running（Xランニングコミュニティ） === */
+.featured-banner--running .featured-banner__inner {
+  background: linear-gradient(135deg, #e8efe2 0%, #d0e0c6 50%, #b6cda6 100%);
+  box-shadow: 0 6px 24px rgba(102, 138, 110, 0.18);
+}
+.featured-banner--running .featured-banner__inner::before {
+  background: radial-gradient(circle, rgba(220, 240, 200, .85), transparent 70%);
+}
+.featured-banner--running .featured-banner__badge { color: #3e5e51; }
+.featured-banner--running .featured-banner__perks { color: #3e5e51; }
+.featured-banner--running .btn--primary {
+  background: #4d7560;
+  box-shadow: 0 4px 14px rgba(77, 117, 96, 0.25);
+}
+.featured-banner--running .btn--primary:hover {
+  background: #5e8a72;
+  box-shadow: 0 6px 18px rgba(77, 117, 96, 0.35);
+}
+
 /* === Sections === */
 .section { max-width: 1080px; margin: 0 auto; padding: 64px 24px; }
 .section--soft { background: var(--bg-soft); max-width: none; padding: 80px 24px; }
@@ -479,6 +498,32 @@ a:hover { opacity: .75; }
     <div class="articles__more">
       <a href="https://note.com/todyboo" target="_blank" rel="noopener" class="btn btn--primary">
         noteで全記事を読む
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Featured Banner（Xランニングコミュニティ） ===== -->
+<section class="featured-banner featured-banner--running" aria-label="Xランニングコミュニティ">
+  <div class="featured-banner__inner">
+    <div>
+      <span class="featured-banner__badge">🏃 RUNNING COMMUNITY</span>
+      <h2 class="featured-banner__title">走る仲間と、毎日をたのしく。</h2>
+      <p class="featured-banner__desc">
+        日々のラン報告、大会の応援、シューズの話まで。
+        ひとりだと続かないことも、仲間がいるから走り続けられる。
+        Xのランニングコミュニティで、ゆるく繋がりませんか。
+      </p>
+      <div class="featured-banner__perks">
+        <span>🏃 日々のラン報告</span>
+        <span>🏅 大会・レースの応援</span>
+        <span>👟 装備・シューズの話</span>
+      </div>
+    </div>
+    <div class="featured-banner__cta">
+      <a href="https://x.com/i/communities/1497320839641198592" target="_blank" rel="noopener" class="btn btn--primary">
+        Xコミュニティに参加
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
     </div>
